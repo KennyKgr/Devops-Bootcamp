@@ -90,7 +90,9 @@
 
 ![Arecord](/Project2/img/create-A-record-for-domain.png)
 
-- I opened my terminal to launch the editor with **sudo nano /etc/nginx/sites-available/cleaningfinance**
+- I opened my terminal to launch the editor with 
+
+  **sudo nano /etc/nginx/sites-available/cleaningfinance**
 
   to edit my setting and save the domain name and sub domain.
 
@@ -112,9 +114,9 @@
 
   **sudo certbot --nginx**
 
-  used the command sudo certbot --nginx to request and deploy the certificates for the domains where 
+  used the command sudo certbot --nginx to request and deploy the certificates for the domains  
   
-  I selected the domains 1 and 3 for certificate deployment
+- I selected the domains 1 and 3 for certificate deployment
 
   ![deployssl](/Project2/img/deploy-ssl.png)
 
