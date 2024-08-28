@@ -6,7 +6,7 @@
 
 ![3servers](/Project3/img/create3servers.png)
 
-- I installed **Nginx by executing the following commands
+- I installed *Nginx* by executing the following commands
  
    **sudo apt update**
 
