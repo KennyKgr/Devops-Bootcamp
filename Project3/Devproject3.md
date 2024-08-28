@@ -44,19 +44,27 @@
 
 delete the zip file when done
 
-  **sudo curl -o /var/www/html/2134_gotto_job.zip https://www.tooplate.com/zip-templates/134_gotto_job.
+...
+  sudo curl -o /var/www/html/2134_gotto_job.zip https://www.tooplate.com/zip-templates/134_gotto_job.
   
   zip && sudo unzip -d /var/www/html /var/www/html/2134_gotto_job.zip && sudo -rm -f /var/www/html/
   
-  2134_gotto_job.zip**
+  2134_gotto_job.zip
+...
+
 
 ![curl](/Project3/img/curl-zip-and-unzip-job-files.png)
 
-and **sudo curl -o /var/www/html/2128_tween_agency.zip https://www.tooplate.com/zip-templates/
+and 
 
-2128_tween_agency.zip && sudo unzip -d /var/www/html /var/www/html/2128_tween_agency.zip && sudo -rm -f 
+...
+  sudo curl -o /var/www/html/2128_tween_agency.zip https://www.tooplate.com/zip-templates/
 
-/var/www/html/2128_tween_agency.zip**
+  2128_tween_agency.zip && sudo unzip -d /var/www/html /var/www/html/2128_tween_agency.zip && sudo -rm -f 
+
+  /var/www/html/2128_tween_agency.zip
+...
+
 
 ![curlagency](/Project3/img/download-zip-and-unzip-files-agency.png)
 
