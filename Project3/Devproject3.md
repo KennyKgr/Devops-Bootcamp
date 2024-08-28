@@ -1,6 +1,6 @@
-#Project Three
+# Project Three
 
-##I was required to setup reverse proxy load Balancing for a static website using mginx 
+## I was required to setup reverse proxy load Balancing for a static website using mginx 
 
 - I launched a total of 3 *Ubuntu instances* and associated an elastic ip address for the servers
 
@@ -152,4 +152,4 @@ for the second server.
 
 
 
-###End of project
+### End of project
