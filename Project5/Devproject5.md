@@ -41,6 +41,7 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 (lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 
 sudo apt update && sudo apt install consul
+
 ...
 
 ![downloadconsul](/Project5/img/5_get_consul_file.png)
@@ -70,6 +71,7 @@ sudo apt update && sudo apt install consul
 - pasted the edited script with my *encrytion key*
 
 ...
+
 "bind_addr" = "0.0.0.0"
 "client_addr" = "0.0.0.0"
 "data_dir" = "/var/consul"
@@ -78,6 +80,7 @@ sudo apt update && sudo apt install consul
 "ui" = true
 "server" = true
 "log_level" = "INFO"
+
 ...
 
 ![encryted](/Project5/img/12_paste_script_correct_option.png)
@@ -111,6 +114,7 @@ sudo apt update && sudo apt install consul
 - copied the html script for *server 01* and *server 02* accordingly
 
 ...
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -132,14 +136,17 @@ sudo apt update && sudo apt install consul
 	<h1>This is Backend SERVER-02</h1>
 </body>
 </html>
+
 ...
 
 - Download consul with the command 
 
 ...
+
 wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+
 ...
 
 ![getconsul](/Project5/img/18_download-client_consul_on_backends.png)
@@ -172,6 +179,7 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 - I used **sudo vi /etc/consul.d/backend.hcl** pasted the script and saved.
 
 ...
+
     "service" = {
   "Name" = "backend"
   "Port" = 80
@@ -180,6 +188,7 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
     "interval" = "3s"
   }
 }
+
 ...
     
 - I verified the status of the server with **consul validate /etc/consul.d**
@@ -210,10 +219,13 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 ![nginx](/Project5/img/28_install_nginx.png)
 
 - went ahead to download the consul-template binary with 
+
 ...
+
 sudo curl -L  https://releases.hashicorp.com/consul-template/0.30.0/consul-template_0.30.0_linux_amd64.zip -o /opt/consul-template.zip
 
 sudo unzip /opt/consul-template.zip -d  /usr/local/bin/
+
 ...
 
 ![curl](/Project5/img/29_use_curl_download_template_for_consul.png)
@@ -241,6 +253,7 @@ sudo unzip /opt/consul-template.zip -d  /usr/local/bin/
 - pasted the script with my *consul server's* Ip Ip address **"52.41.232.241"** embedded in the detail.
 
 ...
+
 - consul {
  address = "52.41.232.241:8500"
 
@@ -256,6 +269,7 @@ template {
  perms       = 0600
  command = "service nginx reload"
 }
+
 ...
 
 - I deleted the default configuration using **sudo rm /etc/nginx/sites-enabled/default**
@@ -293,5 +307,6 @@ template {
 - The load balancer directed all traffic to the second server
 
 ![serverup](/Project5/img/38_consul_server_shows_the_one%20active_backend.png)
+
 
 ###### End Of Project
