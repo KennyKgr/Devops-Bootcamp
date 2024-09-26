@@ -42,13 +42,14 @@
 
 ![installmysql](/Project4/img/install_mysql_server.png)
 
-...
-  **sudo mysql** to log into the console to set the password, with 
+```
+  sudo mysql to log into the console to set the password, with 
 
-  **ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Clover';** **exit** 
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Clover'; exit 
 
   when I was done
-...
+
+```
 
 ![sql](/Project4/img/sudo_mysql.png)
 
@@ -76,7 +77,7 @@
 
 ![phpversion](/Project4/img/Verify_php_version.png)
 
-### Created a Virtual Host for my website using apache
+## Created a Virtual Host for my website using apache
 
 - created a project lamp directory 
 
@@ -180,7 +181,7 @@ and assigned ownership of my created directory to my currect system using
 
   **sudo chown -R www-data:www-data /var/www/html/wordpress**
 
-###### Created a database for wordpress
+## Created a database for wordpress
 
 - Needing to access my MySQL root account with the  command 
 
@@ -200,12 +201,12 @@ and assigned ownership of my created directory to my currect system using
 
 - Granted my created user *kennykgr@localhost* to grant it access to the created database with 
 
- ...
+ ```
 
  GRANT ALL PRIVILEGES ON mov_db.* TO kennykgr@localhost;
  FLUSH PRIVILEGES;
 
- ...
+ ```
 
  - exited the mysql shell with **exit**
 
@@ -301,6 +302,4 @@ and assigned ownership of my created directory to my currect system using
 
 ![loggedin](/Project4/img/sign_in_successful_and_sie_secured.png) 
 
-
-###### End of Project
-
+## End of Project

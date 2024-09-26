@@ -17,7 +17,7 @@ website.
 ![UbuntuServer](/Project1/img/ubuntuserv1.png)
 
 
- - Created a **key pair** for access firstly and saving the **.pem** to my  download folder 
+- Created a **key pair** for access firstly and saving the **.pem** to my  download folder 
  
 ![pemkey](/project1/img/create-key-pair2.png)
 
@@ -164,7 +164,7 @@ website.
 ![sitesec](/Project1/img/final-secured-site.png)
 
 
-###End of the project
+## End of the project
 
 
 

@@ -78,6 +78,8 @@
 
 - I went on to **route53** on **AWS** where I created A record for my domains and sud domains
 
+```
+
    -finance.cloudconnect.click
 
    -www.finance.cloudconnect.click
@@ -85,6 +87,8 @@
    -wedding.cloudconnect.click
 
    -www.wedding.cloudconnect.click
+
+   ```
 
 - Inputting record name and my ip address "**54.201.88.235**" for both websites
 
@@ -137,7 +141,7 @@
 ![site2](/Project2/img/site-secured2.png)
 
 
-### End Of Project
+## End Of Project
 
 
 
