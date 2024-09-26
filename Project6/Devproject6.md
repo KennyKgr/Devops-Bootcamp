@@ -6,12 +6,12 @@
 
 -I used the series of commands to get the various results as follows
 
-...
+'''
 
 mkdir -p flask_api_project/{templates,static} && touch flask_api_project/app.py flask_api_project/
 templates/index.html flask_api_project/static/style.css && python -m venv flask_api_project/venv
 
-...
+'''
 
 ![start](/Project6/img/01_codes_at_work_setup_from_the_beginning.png)
 
@@ -33,12 +33,13 @@ templates/index.html flask_api_project/static/style.css && python -m venv flask_
 
 - I went ahead to creating a virtual environment and installing flask, with these commands
 
-...
+'''
 
 python -m venv venv
 source venv/Scripts/activate
 pip install Flask
-...
+
+'''
 
 ![python](/Project6/img/05_Installing_Flask.png)
 
