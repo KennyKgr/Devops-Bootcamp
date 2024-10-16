@@ -1,4 +1,4 @@
-# DOCKER
+# Dockering Flas Application.
 
 - Launched an Ubuntu Ec2 instance for this project 
 
