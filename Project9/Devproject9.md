@@ -1,4 +1,4 @@
-# Dockering Flas Application.
+# Dockering Flask Application.
 
 - Launched an Ubuntu Ec2 instance for this project 
 
