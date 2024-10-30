@@ -1,6 +1,6 @@
 # Setting Up Prometheus Using Docker Compose & Terraform
 
-- Launched and EC2 Instance running Ubuntu 24.04
+- Launched an EC2 Instance running Ubuntu 24.04
 
 ![instanc](/Project10/img/2_Launch_successful.png)
 
@@ -27,7 +27,7 @@ cd prometheus-observability-stack
 ![cd](/Project10/img/7-cd_into-directory_with_prometheus_stack_config_file.png)
 
 
-- carried out my terraform Install with the following command
+- carried out my **terraform** Install with the following command
 
 ```
 sudo snap install terraform --classic
@@ -124,7 +124,7 @@ sudo chmod -x /usr/local/bin/docker-compose
 
 ![two](/Project10/img/19_Install_docker_and_docker-compose.png)
 
-- started docker with command
+- Started docker with command
 
 ```
 sudo systemctl start docker
@@ -144,15 +144,15 @@ sudo systemctl start docker
 
 ![clonedrepo](/Project10/img/22_cloned_repo_to_new_terraform-spun_instance.png)
 
-- cd into the stack directory on new instance
+- Cd into the stack directory on new instance
 
 ![cdnewinst](/Project10/img/23_cd_into_the_stack.png)
 
-- Execute make all command to update my server ip in prometeus
+- Execute **make all** command to update my server ip in prometheus
 
 ![makeall](/Project10/img/24_make_all_command_executed_success.png)
 
-- make all command execution being carried out
+- **Make all** command execution being carried out
 
 ![makeallworking](/Project10/img/25_make-all_execution.png)
 
@@ -168,7 +168,7 @@ sudo docker-compose up -d
 
 ![prometheusaccess](/Project10/img/27_Prometheus_accessed.png)
 
-- validate the targets, rules and Configurations. target being my Node explorer url
+- Validate the targets, rules and Configurations. target being my Node explorer url
 
 ![prom](/Project10/img/27_Prometheus_accessed.png)
 
@@ -190,7 +190,7 @@ avg by (instance,mode) (irate(node_cpu_seconds_total{mode!='idle'}[1m]))
 
 ![Grafana](/Project10/img/31_Grafana.png)
 
-- Added the prometheus url as my data source, creating a new Dashboard
+- Creating a new Dashboard, I added the prometheus url as my data source, 
 
 ![dashb](/Project10/img/31_Grafana_createdashboard_entry_and_execution.png)
 
@@ -200,7 +200,7 @@ avg by (instance,mode) (irate(node_cpu_seconds_total{mode!='idle'}[1m]))
 
 - To simulate and test the Alert manager accessible on my public ip **http://44.230.159.109:9093**
 
-- with my alert rules already backed in my configuration **alertrules.yaml** which are inactive as it shows.
+- Shows my alert rules already backed in my configuration **alertrules.yaml** which are inactive as seen.
 
 ![alert](/Project10/img/33_Alerts%20open.png)
 
@@ -230,21 +230,17 @@ dd if=/dev/zero of=testfile_16GB bs=1M count=16384; openssl speed -multi $(nproc
 
 ![alertmanager](/Project10/img/37_Alert_Manager.png)
 
-- Roll back the changes to check if fired up alerts were resolved with command
+- Roll back the changes to check if fired up alerts were resolved, with command
 
 ```
 rm testfile_16GB && kill $(pgrep openssl)
 ```
 ![killscript](/Project10/img/38-kill-script-generating_error.png)
 
-- with project completion I retrun to my initial workstation into my project directory, proceeding to destroy and confirm with yes
+- with project completion I return to my initial workstation's project directory, proceeding to destroy and confirm with yes
 
 ![destroy](/Project10/img/39_Destroy-Terraform_infrastruscture.png)
-
 
 - Confirmation destroy was carried out
 
 ![destroyed](/Project10/img/40_destroy_carried_out.png)
-
-
-
