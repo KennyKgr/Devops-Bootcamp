@@ -204,7 +204,7 @@ avg by (instance,mode) (irate(node_cpu_seconds_total{mode!='idle'}[1m]))
 
 ![alert](/Project10/img/33_Alerts%20open.png)
 
-- Also checked rules with command 
+- Also checked rules with command
 
 ```
 sudo docker exec -it prometheus promtool check rules /etc/prometheus/alertrules.yml
