@@ -6,7 +6,7 @@
 
 - Created 5 Ec2 server Instances on the Aws service running on the Ubuntu Os as below
 
-![Ec2](/Advance-Pj1/Images/Instances_5servers.jpg)
+![Ec2](/DevAdv/pj1/Images/Instances_5servers.jpg)
 
 -The public Ip Addresses for the provisioned servers were as follows
 
@@ -29,43 +29,43 @@
 
 **sudo apt update** to update my ubuntu server 
 
-![sudo](/Advance-Pj1/Images/sudo_aprt_update_ubuntu.jpg)
+![sudo](/DevAdv/pj1/Images/sudo_aprt_update_ubuntu.jpg)
 
 **sudo install ansible** to install ansible to my master node
 
-![install_ansible](/Advance-Pj1/Images/sudo_apt_install_ansible.jpg)
+![install_ansible](/DevAdv/pj1/Images/sudo_apt_install_ansible.jpg)
 
 - verify ansible install with **ansible --version**
 
-![verify_ansible](/Advance-Pj1/Images/verify_ansible_install_verion.jpg)
+![verify_ansible](/DevAdv/pj1/Images/verify_ansible_install_verion.jpg)
 
 - In my Master Node I generated a key with the command **ssh-keygen**
 
-![keygen](/Advance-Pj1/Images/create_keygen.jpg)
+![keygen](/DevAdv/pj1/Images/create_keygen.jpg)
 
 - Proceeded to the key location to view my public key on my master node in view of copying
 
-![viewkey](/Advance-Pj1/Images/on_master_node_i_get_to_my_directory_to_view_and-copy_my_key.jpg)
+![viewkey](/DevAdv/pj1/Images/on_master_node_i_get_to_my_directory_to_view_and-copy_my_key.jpg)
 
 - I cat and copied my public key and updated in the **authorized_keys** on the 4 target server systems.
 
-![target](/Advance-Pj1/Images/cat_and_copied_my_authorized_key_from_my_master_node.jpg)
+![target](/DevAdv/pj1/Images/cat_and_copied_my_authorized_key_from_my_master_node.jpg)
 
 - Accesses and edited authorized keys on all target systems with public key from my master node on all  
 
-![key](/Advance-Pj1/Images/edited_authorized_keys_on_target_system.jpg)
+![key](/DevAdv/pj1/Images/edited_authorized_keys_on_target_system.jpg)
 
 - Connected to y target server to test 
 
-![test](/Advance-Pj1/Images/from_master_node_i_connect_directly_after_pasting_key-in_authorized_keys.jpg)
+![test](/DevAdv/pj1/Images/from_master_node_i_connect_directly_after_pasting_key-in_authorized_keys.jpg)
 
 - On my master node I went on to create an ansible directory in my **/home/ubuntu/** for easy accessibiity and an inventory file
 
-![create](/Advance-Pj1/Images/create_ansible_dir_and_inventory_file.jpg)
+![create](/DevAdv/pj1/Images/create_ansible_dir_and_inventory_file.jpg)
 
 - In my newly created ansible directory where the inventory file is located I updated the various Public Ip adrresses from the target systems, grouping them in **Web_servers** and **database_servers**
 
-![grouping](/Advance-Pj1/Images/setup_my_inventory-list.jpg)
+![grouping](/DevAdv/pj1/Images/setup_my_inventory-list.jpg)
 
 # Automation
 
@@ -81,33 +81,33 @@ where I wrote scripts to carry out the following automated tasks
   - Get the total free disk space
   - Get available disk space
 
-![set](/Advance-Pj1/Images/playbook1_webserver_playbook.jpg)
+![set](/DevAdv/pj1/Images/playbook1_webserver_playbook.jpg)
 
-![set1](/Advance-Pj1/Images/playbook2_config.jpg)
+![set1](/DevAdv/pj1/Images/playbook2_config.jpg)
 
 # Deployment
 
 - Executing the playbooks with **ansible-playbook -i inventory playbook.yml** 
 
-![play1](/Advance-Pj1/Images/playbook1_done_webservers.jpg)
+![play1](/DevAdv/pj1/Images/playbook1_done_webservers.jpg)
 
 - executed **ansible-playbook -i inventory playbook2.yml** 
 
-![deploy2](/Advance-Pj1/Images/playbook2_executed_successfully.jpg)
+![deploy2](/DevAdv/pj1/Images/playbook2_executed_successfully.jpg)
 
 - All from within my ansible folder deployed the intended scripts
 
 - visiting the various public Web_server Ip addresses shows both nginx live.
 
-![nginx1](/Advance-Pj1/Images/nginx_active_on_first_web_server.jpg)
+![nginx1](/DevAdv/pj1/Images/nginx_active_on_first_web_server.jpg)
 
-![nginx2](/Advance-Pj1/Images/nginx_active_on_second%20_web_server.jpg)
+![nginx2](/DevAdv/pj1/Images/nginx_active_on_second%20_web_server.jpg)
 
 - Apache was running on the database servers equally
 
-![apache1](/Advance-Pj1/Images/apache1.jpg)
+![apache1](/DevAdv/pj1/Images/apache1.jpg)
 
-![apache2](/Advance-Pj1/Images/apache2_live.jpg)
+![apache2](/DevAdv/pj1/Images/apache2_live.jpg)
 
 
 
