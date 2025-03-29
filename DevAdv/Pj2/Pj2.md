@@ -5,7 +5,7 @@
 ### Using Terraform to provision an Ec2 instance on AWS.
 
 
-C Plan and Preparation of project execution
+Plan and Preparation for project execution
 
 - In view of carrying out this project there was need to put togethere a series of requirements being;
 
