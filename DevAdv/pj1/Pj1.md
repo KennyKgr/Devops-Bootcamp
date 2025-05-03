@@ -5,7 +5,6 @@
 # Setting up the environment 
 
 - Created 5 Ec2 server Instances on the Aws service running on the Ubuntu Os as below
-
 ![Ec2](/DevAdv/pj1/Images/Instances_5servers.jpg)
 
 -The public Ip Addresses for the provisioned servers were as follows
@@ -108,6 +107,8 @@ where I wrote scripts to carry out the following automated tasks
 ![apache1](/DevAdv/pj1/Images/apache1.jpg)
 
 ![apache2](/DevAdv/pj1/Images/apache2_live.jpg)
+
+**END**
 
 
 

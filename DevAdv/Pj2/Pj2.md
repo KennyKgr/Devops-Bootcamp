@@ -75,3 +75,5 @@ Plan and Preparation for project execution
 - Having achieved the desired requirements set from the begining of the project I went on to use **terraform destroy**
 
 ![destroy](/DevAdv/Pj2/images/14_terraform_destroy.jpg)
+
+**END**
